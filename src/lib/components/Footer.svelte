@@ -11,8 +11,8 @@
 		{ label: 'Login', href: 'https://app.opendataug.org/login' },
 		{ label: 'Get started', href: 'https://app.opendataug.org' },
 		{ label: 'Docs ', href: 'https://docs.opendataug.org' },
-		{ label: 'Terms', href: 'https://docs.opendataug.org/terms' },
-		{ label: 'Privacy Policy', href: 'https://docs.opendataug.org/privacy' }
+		{ label: 'Terms', href: 'https://opendataug.org/terms' },
+		{ label: 'Privacy Policy', href: 'https://opendataug.org/privacy' }
 	];
 
 	const currentYear = new Date().getFullYear();

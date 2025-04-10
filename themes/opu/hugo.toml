@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Open Data Uganda'
 
 [[menus.main]]
 name = 'Home'
@@ -8,8 +8,8 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Blog'
+pageRef = '/blog'
 weight = 20
 
 [[menus.main]]

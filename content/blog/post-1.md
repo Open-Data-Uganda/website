@@ -1,9 +1,11 @@
-+++
-title = 'Post 1'
-date = 2023-01-15T09:00:00-07:00
-draft = false
-tags = ['red']
-+++
+---
+title: "Your Post Title"
+date: 2023-06-15
+author: "Luigi Morel"
+featured: true
+featured_image: "/images/img.jpeg"
+tags: ["featured"]
+---
 
 Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
 

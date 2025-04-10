@@ -1,3 +1,73 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Open Data Uganda'
+theme='opu'
+
+[menu]
+  [[menu.main]]
+    name = "Product"
+    url = "#"
+    weight = 1
+    identifier = "product"
+    
+    [[menu.main]]
+      name = "Product Feature 1"
+      url = "#"
+      parent = "product"
+      weight = 1
+    [[menu.main]]
+      name = "Product Feature 2"
+      url = "#"
+      parent = "product"
+      weight = 2
+    [[menu.main]]
+      name = "Product Feature 3"
+      url = "#"
+      parent = "product"
+      weight = 3
+
+  [[menu.main]]
+    name = "Industries"
+    url = "#"
+    weight = 2
+    identifier = "industries"
+    
+    [[menu.main]]
+      name = "Healthcare"
+      url = "#"
+      parent = "industries"
+      weight = 1
+    [[menu.main]]
+      name = "Agriculture"
+      url = "#"
+      parent = "industries"
+      weight = 2
+    [[menu.main]]
+      name = "Education"
+      url = "#"
+      parent = "industries"
+      weight = 3
+    [[menu.main]]
+      name = "Retail"
+      url = "#"
+      parent = "industries"
+      weight = 4
+
+  [[menu.main]]
+    name = "The Network"
+    url = "#"
+    weight = 3
+  [[menu.main]]
+    name = "Our Team"
+    url = "#"
+    weight = 4
+  [[menu.main]]
+    name = "Login"
+    url = "#"
+    weight = 5
+
+[params]
+  paginate = 9
+
+[permalinks]
+  blog = "/blog/:year/:month/:slug/"

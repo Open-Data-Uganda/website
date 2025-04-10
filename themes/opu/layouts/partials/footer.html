@@ -1,1 +1,166 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<!-- Footer -->
+<footer class="bg-blue-900 text-white lg:py-32 py-10">
+    <div class="container mx-auto px-4">
+        <!-- Footer Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+            <!-- Logo Column -->
+            <div class="lg:col-span-1">
+                <a href="#" class="inline-block mb-6">
+                    <svg class="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="3" rx="1" fill="currentColor"></rect>
+                        <rect x="3" y="10" width="18" height="3" rx="1" fill="currentColor"></rect>
+                        <rect x="3" y="17" width="12" height="3" rx="1" fill="currentColor"></rect>
+                    </svg>
+                </a>
+                <!-- Added social media icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-100 hover:text-white transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-100 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-100 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-2.5">
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Product Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Product</h3>
+                <ul class="space-y-2.5">
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Mobile Data Platform</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Our Network</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Become a Field Agent</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Solutions</h3>
+                <ul class="space-y-2.5">
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Non Profits</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Market Research</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Government</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Startups</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                <ul class="space-y-2.5">
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Help/Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Case Studies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Developers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-100 text-sm transition">Download Android App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="pt-8 border-t border-white flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-sm text-gray-100">
+                    © <span id="currentYear"></span> Open Data Uganda. All Rights Reserved.
+                </p>
+                <script>
+                    document.getElementById("currentYear").textContent =
+                        new Date().getFullYear();
+                </script>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-100 hover:text-white transition">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-100 hover:text-white transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-100 hover:text-white transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/main.js"></script>
+
+<style>
+    @keyframes pulse {
+        0% {
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+    }
+
+    /* Add hero background image */
+    #hero-background {
+        background-image: url("https://images.unsplash.com/photo-1535068484622-7a077e5aa558?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80");
+    }
+
+    /* Blog image hover animation */
+    .blog-image {
+        transition: transform 0.5s ease;
+    }
+
+    .blog-image:hover {
+        transform: scale(1.1);
+    }
+</style>

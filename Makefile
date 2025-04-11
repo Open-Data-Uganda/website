@@ -1,7 +1,12 @@
-.PHONY: lint lint-md lint-js lint-css
+.PHONY: start lint lint-fix lint-md lint-js lint-css
+
+start:
+	@echo "→ Starting development server..."
+	hugo server -D && cd themes/opu && npm run watch
 
 lint: lint-md lint-js lint-css
 	@echo "✓ All linting checks passed"
+	
 lint-fix: lint-md lint-js lint-css
 	@echo "✓ All linting checks passed"
 	@echo "→ Fixing issues..."

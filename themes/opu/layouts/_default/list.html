@@ -20,22 +20,18 @@
 </div>
 
 <!-- Blog Section -->
-<section class="py-16 bg-gray-50">
+<section class="lg:py-20 py-10 bg-gray-50">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-        {{ .Params.section_title | default "OUR LATEST INSIGHTS" }}
-      </h2>
-      <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-        {{ .Params.section_description | default "Stay updated with the latest trends, case studies, and insights about data collection in Africa." }}
-      </p>
+    <div class="flex flex-col mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-900 pb-6 border-b border-b-gray-200">
+        {{ .Title }}
+      </h1>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {{ $paginator := .Paginate (where .Pages "Type" "blog") }}
-      {{ range $paginator.Pages }}
-      <a href="{{ .RelPermalink }}" class="group">
-        <div class="rounded-lg overflow-hidden  transition-all duration-300 h-full">
+      {{ range .Pages }}
+      <div class="rounded-lg overflow-hidden transition-all duration-300 h-full">
+        <a href="{{ .RelPermalink }}" class="group">
           <div class="aspect-w-16 aspect-h-9 overflow-hidden">
             {{ with .Params.featured_image }}
             <img src="{{ . }}" alt="{{ $.Title }}"
@@ -49,14 +45,20 @@
             </div>
             {{ end }}
           </div>
+        </a>
 
-          <div>
-            {{ with .Params.categories }}
-            <div class="text-blue-600 font-medium mb-1">
-              {{ range first 1 . }}{{ . }}{{ end }}
-            </div>
+        <div>
+          {{ with .Params.tags }}
+          <div class="flex flex-wrap gap-2 mb-2 mt-2">
+            {{ range . }}
+            <a href="/tags/{{ . | urlize }}" class="text-blue-600 uppercase hover:text-blue-800 font-medium text-sm">
+              {{ . }}
+            </a>
             {{ end }}
+          </div>
+          {{ end }}
 
+          <a href="{{ .RelPermalink }}" class="group">
             <h3 class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition-colors">
               {{ .Title }}
             </h3>
@@ -68,34 +70,11 @@
             <div class="flex items-center justify-between mt-auto">
               <span class="text-sm text-gray-500">{{ .Date.Format "Jan 2, 2006" }}</span>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
+      </div>
       {{ end }}
     </div>
-
-    {{ if gt $paginator.TotalPages 1 }}
-    <div class="mt-12 flex justify-center space-x-2">
-      {{ if $paginator.HasPrev }}
-      <a href="{{ $paginator.Prev.URL }}" class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
-        Previous
-      </a>
-      {{ end }}
-
-      {{ range $paginator.Pagers }}
-      <a href="{{ .URL }}"
-        class="px-4 py-2 {{ if eq . $paginator.PageNumber }}bg-blue-600 text-white{{ else }}bg-white border border-gray-300 hover:bg-gray-50{{ end }} rounded-md">
-        {{ .PageNumber }}
-      </a>
-      {{ end }}
-
-      {{ if $paginator.HasNext }}
-      <a href="{{ $paginator.Next.URL }}" class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
-        Next
-      </a>
-      {{ end }}
-    </div>
-    {{ end }}
   </div>
 </section>
 {{ end }}

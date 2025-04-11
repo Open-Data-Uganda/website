@@ -5,69 +5,70 @@ theme='opu'
 
 [menu]
   [[menu.main]]
-    name = "Product"
-    url = "#"
-    weight = 1
-    identifier = "product"
-    
-    [[menu.main]]
-      name = "Product Feature 1"
-      url = "#"
-      parent = "product"
-      weight = 1
-    [[menu.main]]
-      name = "Product Feature 2"
-      url = "#"
-      parent = "product"
-      weight = 2
-    [[menu.main]]
-      name = "Product Feature 3"
-      url = "#"
-      parent = "product"
-      weight = 3
-
-  [[menu.main]]
     name = "Industries"
-    url = "#"
-    weight = 2
+    url = ""
+    weight = 1
     identifier = "industries"
     
     [[menu.main]]
-      name = "Healthcare"
-      url = "#"
+      name = "Agriculture"
+      url = "/tags/agriculture"
       parent = "industries"
       weight = 1
     [[menu.main]]
-      name = "Agriculture"
-      url = "#"
+      name = "ICT"
+      url = "/tags/ict"
       parent = "industries"
       weight = 2
     [[menu.main]]
-      name = "Education"
-      url = "#"
+      name = "Tourism"
+      url = "/tags/tourism"
       parent = "industries"
       weight = 3
     [[menu.main]]
-      name = "Retail"
-      url = "#"
+      name = "Manufacturing"
+      url = "/tags/manufacturing"
       parent = "industries"
       weight = 4
+    [[menu.main]]
+      name = "Oil and Gas"
+      url = "/tags/oil-and-gas"
+      parent = "industries"
+      weight = 5
+    [[menu.main]]
+      name = "Construction"
+      url = "/tags/construction"
+      parent = "industries"
+      weight = 6
+    [[menu.main]]
+      name = "Fishing Industry"
+      url = "/tags/fishing-industry"
+      parent = "industries"
+      weight = 7
+    [[menu.main]]
+      name = "Healthcare"
+      url = "/tags/healthcare"
+      parent = "industries"
+      weight = 8
 
   [[menu.main]]
-    name = "The Network"
-    url = "#"
-    weight = 3
+    name = "About Us"
+    url = "/about"
+    weight = 2
   [[menu.main]]
     name = "Team"
     url = "/team"
-    weight = 4
+    weight = 3
   [[menu.main]]
     name = "Login"
     url = "#"
-    weight = 5
+    weight = 4
 
 [params]
   paginate = 9
 
 [permalinks]
   blog = "/blog/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"

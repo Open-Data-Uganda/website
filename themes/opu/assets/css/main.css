@@ -31,5 +31,6 @@
   h5,
   h6 {
     font-family: "Avenir", "Poppins", sans-serif;
+    line-height: 30.4px;
   }
 }

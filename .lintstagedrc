@@ -1,0 +1,5 @@
+{
+  "*.md": ["npx remark --quiet --frail"],
+  "*.{css,scss}": ["npx stylelint --quiet"],
+  "*.js}": ["npx eslint --quiet"]
+}

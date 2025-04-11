@@ -1,0 +1,37 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "This is the website for OpenData Uganda, built using [Hugo](https://gohugo.io/) static site generator.",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "prettier --write \"**/*.{html,json,md,yaml,yml}\"",
+    "lint:check": "prettier --check \"**/*.{html,json,md,yaml,yml}\""
+  },
+  "type": "module",
+  "lint-staged": {
+    "*.{html,json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "remark-cli": "^12.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-lint-list-item-indent": "^4.0.1",
+    "remark-preset-lint-consistent": "^6.0.1",
+    "remark-preset-lint-recommended": "^7.0.1",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

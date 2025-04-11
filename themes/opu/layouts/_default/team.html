@@ -1,0 +1,70 @@
+{{define "main"}}
+<div class="relative lg:h-[60vh] h-screen pt-16">
+    <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+    <div id="hero-background" class="absolute inset-0 bg-cover bg-center"></div>
+
+    <div id="dots-container" class="absolute inset-0 z-20"></div>
+
+    <div
+        class="relative z-30 container mx-auto px-4 h-full flex flex-col justify-center items-start text-left text-white">
+        <p class="text-sm uppercase tracking-widest mb-20 flex items-center">
+            Team <span class="ml-2 inline-block w-12 h-px bg-white"></span>
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
+            Making things happen at <br class="hidden lg:inline-block"> Open Data Uganda
+        </h1>
+    </div>
+</div>
+
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Meet Our Team</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Our diverse team of experts is passionate about leveraging
+                mobile technology to transform data collection across Africa.</p>
+        </div>
+
+        {{ $memberCount := len .Site.Data.team.members }}
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 {{ if lt $memberCount 3 }}justify-items-center {{ if eq $memberCount 1 }}lg:grid-cols-1{{ else }}lg:grid-cols-2{{ end }}{{ end }}">
+            {{ range .Site.Data.team.members }}
+            <div
+                class="bg-white rounded overflow-hidden shadow transition-shadow duration-300 transform border border-gray-100 {{ if lt $memberCount 3 }}max-w-md w-full{{ end }}">
+                <div class="h-64 overflow-hidden relative group">
+                    <img src="{{ .image }}" alt="{{ .name }}"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">{{ .name }}</h3>
+                    <p class="text-blue-600 mb-3 font-medium">{{ .role }}</p>
+                    <p class="text-gray-600 mb-4">{{ .bio }}</p>
+                    <div class="flex space-x-3 pt-2 border-t border-gray-100">
+                        {{ with .social.twitter }}
+                        <a href="{{ . }}" target="_blank"
+                            class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        {{ end }}
+                        {{ with .social.linkedin }}
+                        <a href="{{ . }}" target="_blank"
+                            class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        {{ end }}
+                        {{ with .social.email }}
+                        <a href="mailto:{{ . }}"
+                            class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{end}}

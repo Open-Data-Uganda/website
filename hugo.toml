@@ -58,8 +58,8 @@ theme='opu'
     url = "#"
     weight = 3
   [[menu.main]]
-    name = "Our Team"
-    url = "#"
+    name = "Team"
+    url = "/team"
     weight = 4
   [[menu.main]]
     name = "Login"

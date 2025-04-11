@@ -1,0 +1,9 @@
+members:
+  - name: "Luigi Morel"
+    role: "Founder"
+    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    bio: "A software engineer with a passion for open data and community building. With a background in computer science and having worked on various projects related to data analysis and visualization."
+    social:
+      twitter: "https://twitter.com/luigimorel_"
+      linkedin: "https://www.linkedin.com/in/luigimorel/"
+      email: "hi@opendataug.org"

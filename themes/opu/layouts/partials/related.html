@@ -13,7 +13,7 @@
             {{ $relatedPosts := where $relatedPosts "Permalink" "!=" .Permalink }}
             {{ $relatedPosts := where $relatedPosts "Params.tags" "intersect" $tags }}
             {{ range first 3 $relatedPosts }}
-            <div class="rounded-lg overflow-hidden transition-all duration-300 h-full">
+            <div class="rounded-lg overflow-hidden transition-all lg:mb-20 sm:mb-10 mb-5 duration-300 h-full">
                 <a href="{{ .RelPermalink }}" class="group">
                     <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         {{ with .Params.featured_image }}
@@ -32,10 +32,10 @@
 
                 <div>
                     {{ with .Params.tags }}
-                    <div class="flex flex-wrap gap-2 mb-2 mt-2">
+                    <div class="flex flex-wrap gap-2 mb-2 mt-3">
                         {{ range . }}
                         <a href="/tags/{{ . | urlize }}"
-                            class="text-blue-600 uppercase hover:text-blue-800 font-medium text-sm">
+                            class="text-blue-600 hover:underline uppercase hover:text-blue-800 font-medium text-xs">
                             {{ . }}
                         </a>
                         {{ end }}
@@ -43,16 +43,21 @@
                     {{ end }}
 
                     <a href="{{ .RelPermalink }}" class="group">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition-colors">
+                        <h3
+                            class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 hover:underline transition-colors">
                             {{ .Title }}
                         </h3>
 
                         <p class="text-gray-700 mb-4 line-clamp-3">
-                            {{ .Summary | truncate 120 }}
+                            {{ .Summary | truncate 110 }}
                         </p>
 
-                        <div class="flex items-center justify-between mt-auto">
-                            <span class="text-sm text-gray-500">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <div class="flex items-center gap-6 mt-auto">
+                            <span class="text-sm text-gray-900 font-medium">{{ .Params.author }}</span>
+                            <svg class="w-1 h-1 fill-current text-gray-500" viewBox="0 0 4 4">
+                                <circle cx="2" cy="2" r="2" />
+                            </svg>
+                            <span class="text-sm text-gray-500">{{ .Date.Format "January 2, 2006" }}</span>
                         </div>
                     </a>
                 </div>

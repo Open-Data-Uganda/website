@@ -60,8 +60,8 @@ theme='opu'
     url = "/team"
     weight = 3
   [[menu.main]]
-    name = "Login"
-    url = "#"
+    name = "Blog"
+    url = "/blog"
     weight = 4
 
 [params]

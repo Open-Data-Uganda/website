@@ -1,15 +1,15 @@
 ---
 title: "The Data Revolution in Uganda: Transforming Public Services"
-description: "How open data is revolutionizing public service delivery and citizen engagement in Uganda"
+summary: "How open data is revolutionizing public service delivery and citizen engagement in Uganda"
 date: 2025-04-11
 draft: false
 featured: true
-featured_image: "/images/blog/data-revolution.jpg"
+featured_image: "/images/img.jpeg"
 tags: ["featured", "digital-transformation", "government"]
 author: "Sarah Nakato"
 ---
 
-# The Data Revolution in Uganda: Transforming Public Services
+The Data Revolution in Uganda: Transforming Public Services
 
 In recent years, Uganda has witnessed a remarkable transformation in how public services are delivered and accessed, thanks to the growing adoption of open data practices. This shift represents not just a technological advancement, but a fundamental change in how government interacts with citizens.
 

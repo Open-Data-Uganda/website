@@ -72,7 +72,7 @@ window.addEventListener('scroll', function () {
   const mobileMenuIcon = document.querySelector('.fa-bars')
 
   if (window.scrollY > 50) {
-    navbar.classList.add('bg-white', 'shadow')
+    navbar.classList.add('bg-[#0D1117]', 'shadow')
     navbar.classList.remove('bg-transparent')
     navbarLogo.classList.remove('text-white')
     navbarLogo.classList.add('text-gray-800')
@@ -87,7 +87,7 @@ window.addEventListener('scroll', function () {
       mobileMenuIcon.classList.add('text-black')
     }
   } else {
-    navbar.classList.remove('bg-white', 'shadow')
+    navbar.classList.remove('bg-[#0D1117]', 'shadow')
     navbar.classList.add('bg-transparent')
     navbarLogo.classList.add('text-white')
     navbarLogo.classList.remove('text-gray-800')

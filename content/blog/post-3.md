@@ -1,11 +1,11 @@
 ---
-title: "Your Post Title"
+title: 'Your Post Title'
 date: 2023-06-15
-author: "Author Name"
+author: 'Author Name'
 featured: true
-featured_image: "/images/img.jpeg"
-tags: ["featured"]
-summary: "Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem."
+featured_image: '/images/img.jpeg'
+tags: ['featured']
+summary: 'Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.'
 ---
 
 Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.

@@ -1,10 +1,10 @@
 ---
-title: "Tourism Growth in Uganda"
+title: 'Tourism Growth in Uganda'
 date: 2025-03-01
-author: "Tourism Team"
+author: 'Tourism Team'
 featured: false
-featured_image: "/images/img.jpeg"
-tags: ["tourism"]
+featured_image: '/images/img.jpeg'
+tags: ['tourism']
 summary: "Analysis of Uganda's tourism sector growth and its impact on local communities and the economy."
 ---
 

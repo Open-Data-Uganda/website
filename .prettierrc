@@ -13,7 +13,11 @@
       "options": {
         "parser": "go-template",
         "goTemplateBracketSpacing": true,
-        "htmlWhitespaceSensitivity": "ignore"
+        "htmlWhitespaceSensitivity": "ignore",
+        "printWidth": 120,
+        "bracketSameLine": false,
+        "singleAttributePerLine": true,
+        "vueIndentScriptAndStyle": true
       }
     }
   ]

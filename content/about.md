@@ -1,8 +1,9 @@
 ---
-title: "About Open Data Uganda"
-description: "Learn about our mission to make data accessible and transparent in Uganda"
+title: 'About Open Data Uganda'
+description: 'Learn about our mission to make data accessible and transparent in Uganda'
 date: 2025-04-11
 draft: false
+layout: 'about'
 ---
 
 # About Open Data Uganda
@@ -12,6 +13,7 @@ Open Data Uganda is a pioneering initiative dedicated to promoting transparency,
 ## Our Mission
 
 We strive to create an open, transparent, and data-driven society in Uganda by:
+
 - Making public data accessible and usable for all
 - Promoting data literacy and understanding
 - Supporting evidence-based decision making
@@ -20,7 +22,9 @@ We strive to create an open, transparent, and data-driven society in Uganda by:
 ## What We Do
 
 ### Data Collection & Standardization
+
 We work with various organizations and government bodies to collect, standardize, and publish data in accessible formats. Our focus areas include:
+
 - Agriculture and Rural Development
 - Health and Education
 - Infrastructure and Transportation
@@ -28,7 +32,9 @@ We work with various organizations and government bodies to collect, standardize
 - Environmental Data
 
 ### Capacity Building
+
 We provide training and support to:
+
 - Government agencies on data management
 - Researchers and academics
 - Civil society organizations
@@ -36,7 +42,9 @@ We provide training and support to:
 - Local communities and citizens
 
 ### Innovation Support
+
 Through our platform, we:
+
 - Host hackathons and innovation challenges
 - Provide API access to datasets
 - Support start-ups and entrepreneurs
@@ -45,6 +53,7 @@ Through our platform, we:
 ## Our Impact
 
 Since our inception, we have:
+
 - Published over 1,000 datasets
 - Trained more than 500 individuals in data literacy
 - Supported 50+ data-driven projects
@@ -53,6 +62,7 @@ Since our inception, we have:
 ## Join Us
 
 Whether you're a data provider, user, or enthusiast, there are many ways to get involved with Open Data Uganda:
+
 - Share your datasets
 - Participate in our events
 - Use our open data APIs

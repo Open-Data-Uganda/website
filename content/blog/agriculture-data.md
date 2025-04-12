@@ -1,10 +1,10 @@
 ---
-title: "Agricultural Data Revolution"
+title: 'Agricultural Data Revolution'
 date: 2024-11-20
-author: "Agriculture Research Team"
+author: 'Agriculture Research Team'
 featured: false
-featured_image: "/images/agriculture.jpeg"
-tags: ["agriculture"]
+featured_image: '/images/agriculture.jpeg'
+tags: ['agriculture']
 summary: "How data-driven farming is transforming Uganda's agricultural sector and improving food security."
 ---
 

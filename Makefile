@@ -2,7 +2,7 @@
 
 start:
 	@echo "→ Starting development server..."
-	hugo server -D && cd themes/opu && npm run watch
+	hugo server --watch --disableFastRender && cd themes/opu && npm run watch
 
 lint: lint-md lint-js lint-css
 	@echo "✓ All linting checks passed"

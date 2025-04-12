@@ -1,10 +1,10 @@
 ---
-title: "Agricultural Innovations in Uganda"
+title: 'Agricultural Innovations in Uganda'
 date: 2025-04-01
-author: "Data Team"
+author: 'Data Team'
 featured: true
-featured_image: "/images/img.jpeg"
-tags: ["agriculture", "featured"]
+featured_image: '/images/img.jpeg'
+tags: ['agriculture', 'featured']
 summary: "Exploring the latest agricultural innovations and their impact on Ugandan farmers' productivity and income."
 ---
 

@@ -64,6 +64,49 @@ theme='opu'
     url = "/blog"
     weight = 4
 
+  [[menu.product]]
+    name = "Data Portal"
+    url = "/data-portal/"
+    weight = 1
+  [[menu.product]]
+    name = "API Access"
+    url = "/api/"
+    weight = 2
+  [[menu.product]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 3
+
+  [[menu.solutions]]
+    name = "Government"
+    url = "/solutions/government/"
+    weight = 1
+  [[menu.solutions]]
+    name = "Healthcare"
+    url = "/solutions/healthcare/"
+    weight = 2
+  [[menu.solutions]]
+    name = "Education"
+    url = "/solutions/education/"
+    weight = 3
+  [[menu.solutions]]
+    name = "Agriculture"
+    url = "/solutions/agriculture/"
+    weight = 4
+
+  [[menu.resources]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.resources]]
+    name = "Case Studies"
+    url = "/case-studies/"
+    weight = 2
+  [[menu.resources]]
+    name = "Data Reports"
+    url = "/reports/"
+    weight = 3
+
 [params]
   paginate = 9
 
@@ -72,3 +115,9 @@ theme='opu'
 
 [taxonomies]
   tag = "tags"
+
+[params.social]
+  twitter = "https://twitter.com/opendatauganda"
+  linkedin = "https://linkedin.com/company/opendatauganda"
+  github = "https://github.com/opendatauganda"
+  instagram = "https://instagram.com/opendatauganda"

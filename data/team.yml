@@ -1,74 +1,74 @@
 members:
-  - name: "Luigi Morel"
-    role: "Founder"
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
-    bio: "A software engineer with a passion for open data and community building. With a background in computer science and having worked on various projects related to data analysis and visualization."
+  - name: 'Luigi Morel'
+    role: 'Founder'
+    image: 'https://randomuser.me/api/portraits/men/32.jpg'
+    bio: 'A software engineer with a passion for open data and community building. With a background in computer science and having worked on various projects related to data analysis and visualization.'
     social:
-      twitter: "https://twitter.com/luigimorel_"
-      linkedin: "https://www.linkedin.com/in/luigimorel/"
-      email: "hi@opendataug.org"
+      twitter: 'https://twitter.com/luigimorel_'
+      linkedin: 'https://www.linkedin.com/in/luigimorel/'
+      email: 'hi@opendataug.org'
 
 leadership:
-  - name: "Sarah Nakato"
-    role: "Executive Director"
-    bio: "Sarah brings over 15 years of experience in data policy and digital transformation. She previously led major open data initiatives across East Africa."
-    image: "/images/team/sarah-nakato.jpg"
-    linkedin: "https://linkedin.com/in/sarah-nakato"
-    twitter: "@sarahnakato"
+  - name: 'Sarah Nakato'
+    role: 'Executive Director'
+    bio: 'Sarah brings over 15 years of experience in data policy and digital transformation. She previously led major open data initiatives across East Africa.'
+    image: '/images/team/sarah-nakato.jpg'
+    linkedin: 'https://linkedin.com/in/sarah-nakato'
+    twitter: '@sarahnakato'
 
-  - name: "David Okiror"
-    role: "Technical Director"
-    bio: "David is a seasoned software engineer with expertise in building data platforms. He leads our technical infrastructure and API development."
-    image: "/images/team/david-okiror.jpg"
-    linkedin: "https://linkedin.com/in/david-okiror"
-    github: "dokiror"
+  - name: 'David Okiror'
+    role: 'Technical Director'
+    bio: 'David is a seasoned software engineer with expertise in building data platforms. He leads our technical infrastructure and API development.'
+    image: '/images/team/david-okiror.jpg'
+    linkedin: 'https://linkedin.com/in/david-okiror'
+    github: 'dokiror'
 
-  - name: "Grace Auma"
-    role: "Director of Partnerships"
-    bio: "Grace coordinates our relationships with government agencies, NGOs, and private sector partners to expand our data ecosystem."
-    image: "/images/team/grace-auma.jpg"
-    linkedin: "https://linkedin.com/in/grace-auma"
+  - name: 'Grace Auma'
+    role: 'Director of Partnerships'
+    bio: 'Grace coordinates our relationships with government agencies, NGOs, and private sector partners to expand our data ecosystem.'
+    image: '/images/team/grace-auma.jpg'
+    linkedin: 'https://linkedin.com/in/grace-auma'
 
 team:
-  - name: "Robert Mugisha"
-    role: "Data Science Lead"
-    bio: "Robert leads our data standardization efforts and ensures data quality across all our platforms."
-    image: "/images/team/robert-mugisha.jpg"
-    linkedin: "https://linkedin.com/in/robert-mugisha"
+  - name: 'Robert Mugisha'
+    role: 'Data Science Lead'
+    bio: 'Robert leads our data standardization efforts and ensures data quality across all our platforms.'
+    image: '/images/team/robert-mugisha.jpg'
+    linkedin: 'https://linkedin.com/in/robert-mugisha'
 
-  - name: "Patricia Nansubuga"
-    role: "Community Manager"
-    bio: "Patricia manages our community engagement programs and leads capacity building initiatives."
-    image: "/images/team/patricia-nansubuga.jpg"
-    twitter: "@patnansubuga"
+  - name: 'Patricia Nansubuga'
+    role: 'Community Manager'
+    bio: 'Patricia manages our community engagement programs and leads capacity building initiatives.'
+    image: '/images/team/patricia-nansubuga.jpg'
+    twitter: '@patnansubuga'
 
-  - name: "Michael Okello"
-    role: "Senior Developer"
-    bio: "Michael specializes in API development and maintains our core data infrastructure."
-    image: "/images/team/michael-okello.jpg"
-    github: "mokello"
+  - name: 'Michael Okello'
+    role: 'Senior Developer'
+    bio: 'Michael specializes in API development and maintains our core data infrastructure.'
+    image: '/images/team/michael-okello.jpg'
+    github: 'mokello'
 
-  - name: "Faith Nakigudde"
-    role: "Data Policy Analyst"
-    bio: "Faith works on data governance frameworks and policy recommendations for open data initiatives."
-    image: "/images/team/faith-nakigudde.jpg"
-    linkedin: "https://linkedin.com/in/faith-nakigudde"
+  - name: 'Faith Nakigudde'
+    role: 'Data Policy Analyst'
+    bio: 'Faith works on data governance frameworks and policy recommendations for open data initiatives.'
+    image: '/images/team/faith-nakigudde.jpg'
+    linkedin: 'https://linkedin.com/in/faith-nakigudde'
 
-  - name: "Ivan Ssemaganda"
-    role: "UX Designer"
-    bio: "Ivan ensures our platforms are accessible and user-friendly for all stakeholders."
-    image: "/images/team/ivan-ssemaganda.jpg"
-    dribbble: "ivanssemaganda"
+  - name: 'Ivan Ssemaganda'
+    role: 'UX Designer'
+    bio: 'Ivan ensures our platforms are accessible and user-friendly for all stakeholders.'
+    image: '/images/team/ivan-ssemaganda.jpg'
+    dribbble: 'ivanssemaganda'
 
 advisors:
-  - name: "Dr. Christine Mugimba"
-    role: "Technical Advisor"
-    bio: "Dr. Mugimba is an expert in digital transformation and advises on our technical strategy."
-    image: "/images/team/christine-mugimba.jpg"
-    linkedin: "https://linkedin.com/in/christine-mugimba"
+  - name: 'Dr. Christine Mugimba'
+    role: 'Technical Advisor'
+    bio: 'Dr. Mugimba is an expert in digital transformation and advises on our technical strategy.'
+    image: '/images/team/christine-mugimba.jpg'
+    linkedin: 'https://linkedin.com/in/christine-mugimba'
 
-  - name: "James Rutaro"
-    role: "Policy Advisor"
-    bio: "James brings extensive experience in public policy and government relations."
-    image: "/images/team/james-rutaro.jpg"
-    twitter: "@jrutaro"
+  - name: 'James Rutaro'
+    role: 'Policy Advisor'
+    bio: 'James brings extensive experience in public policy and government relations.'
+    image: '/images/team/james-rutaro.jpg'
+    twitter: '@jrutaro'

@@ -21,7 +21,6 @@
 @layer base {
   body {
     font-family: "Avenir LT Std", "Poppins", sans-serif;
-    line-height: 30.4px;
   }
 
   h1,
@@ -29,6 +28,7 @@
   h3,
   h4,
   h5,
+  p,
   h6 {
     font-family: "Avenir", "Poppins", sans-serif;
     line-height: 30.4px;

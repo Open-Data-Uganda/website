@@ -1,10 +1,10 @@
 ---
-title: "Manufacturing Growth in Uganda"
+title: 'Manufacturing Growth in Uganda'
 date: 2025-02-15
-author: "Industry Team"
+author: 'Industry Team'
 featured: false
-featured_image: "/images/img.jpeg"
-tags: ["manufacturing"]
+featured_image: '/images/img.jpeg'
+tags: ['manufacturing']
 summary: "Review of Uganda's manufacturing sector development and its contribution to economic growth."
 ---
 

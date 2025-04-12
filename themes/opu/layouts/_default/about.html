@@ -1,0 +1,167 @@
+{{define "main"}}
+<div class="relative lg:h-[60vh] h-screen pt-16">
+    <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+    <div id="hero-background" class="absolute inset-0 bg-cover bg-center"></div>
+
+    <div id="dots-container" class="absolute inset-0 z-20"></div>
+
+    <div
+        class="relative z-30 container mx-auto px-4 h-full flex flex-col justify-center items-start text-left text-white">
+        <p class="text-sm uppercase tracking-widest mb-20 flex items-center">
+            {{ .Title | upper }} <span class="ml-2 inline-block w-12 h-px bg-white"></span>
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
+            Making things happen at <br class="hidden lg:inline-block"> Open Data Uganda
+        </h1>
+    </div>
+</div>
+
+
+
+<div class="container lg:py-20 py-10 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+        <!-- Data Collection -->
+        <div class="bg-gray-100 p-6 md:p-8 min-h-[300px] transition-all duration-300 hover:bg-gray-200">
+            <div class="flex flex-col h-full">
+                <svg class="w-8 h-8 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <h2 class="text-xl font-bold mb-3 border-b-2 border-gray-400 inline-block pb-1">Data Collection</h2>
+                <p class="text-sm md:text-base">
+                    We gather and organize public data from various sources, ensuring quality and reliability in our
+                    data collection process.
+                </p>
+            </div>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="bg-gray-200 p-6 md:p-8 min-h-[300px] transition-all duration-300 hover:bg-gray-300">
+            <div class="flex flex-col h-full">
+                <svg class="w-8 h-8 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <h2 class="text-xl font-bold mb-3 border-b-2 border-gray-400 inline-block pb-1">Data Analysis</h2>
+                <p class="text-sm md:text-base">
+                    We transform raw data into meaningful insights, helping stakeholders make informed decisions through
+                    data-driven approaches.
+                </p>
+            </div>
+        </div>
+
+        <!-- Open Access -->
+        <div class="bg-gray-300 p-6 md:p-8 min-h-[300px] transition-all duration-300 hover:bg-gray-400">
+            <div class="flex flex-col h-full">
+                <svg class="w-8 h-8 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                </svg>
+                <h2 class="text-xl font-bold mb-3 border-b-2 border-gray-400 inline-block pb-1">Open Access</h2>
+                <p class="text-sm md:text-base">
+                    We provide free and open access to public data, promoting transparency and enabling innovation
+                    across Uganda.
+                </p>
+            </div>
+        </div>
+
+        <!-- Community Engagement -->
+        <div class="bg-gray-400 p-6 md:p-8 min-h-[300px] transition-all duration-300 hover:bg-gray-500">
+            <div class="flex flex-col h-full">
+                <svg class="w-8 h-8 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <h2 class="text-xl font-bold mb-3 border-b-2 border-gray-500 inline-block pb-1">Community Engagement
+                </h2>
+                <p class="text-sm md:text-base">
+                    We build and support a community of data users, researchers, and civic tech enthusiasts to drive
+                    social impact.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="py-24 relative">
+    <div class="w-full container px-4 md:px-5 lg:px-5 mx-auto">
+        <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
+            <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
+                <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+                    <h2 class="text-gray-900 text-4xl font-bold leading-normal lg:text-start text-center">
+                        Transforming Uganda Through Open Data Access</h2>
+                    <p class="text-base font-normal lg:text-start text-center">We collect, organize, and share vital
+                        data about Uganda's development, governance, and social indicators. By making this information
+                        freely accessible, we empower citizens, researchers, and policymakers to make informed
+                        decisions. Our commitment to transparent data collection spans across healthcare, education,
+                        agriculture, and public services sectors throughout Uganda's regions.</p>
+                </div>
+
+            </div>
+            <img class="lg:mx-0 mx-auto h-full rounded-3xl object-cover"
+                src="https://pagedone.io/asset/uploads/1717751272.png" alt="Data collection in Uganda" />
+        </div>
+    </div>
+</section>
+
+<section class="py-24 relative">
+    <div class="w-full container px-4 md:px-5 lg:px-5 mx-auto">
+        <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
+            <img class="lg:mx-0 mx-auto h-full rounded-3xl object-cover"
+                src="https://pagedone.io/asset/uploads/1717751272.png" alt="Data collection in Uganda" />
+            <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
+                <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+                    <h2 class="text-gray-900 text-4xl font-bold leading-normal lg:text-start text-center">Building Tools
+                    </h2>
+                    <p class="text-base font-normal lg:text-start text-center">We collect, organize, and share vital
+                        data about Uganda's development, governance, and social indicators. By making this information
+                        freely accessible, we empower citizens, researchers, and policymakers to make informed
+                        decisions. Our commitment to transparent data collection spans across healthcare, education,
+                        agriculture, and public services sectors throughout Uganda's regions.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-50">
+    <div class="w-full container px-4 md:px-5 lg:px-5 mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-6">What Makes Us Unique</h2>
+            <p class="text-lg text-gray-600">We combine technical expertise with a passion for data and social impact
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <svg class="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <h3 class="text-xl font-bold mb-4">Technical Excellence</h3>
+                <p class="text-gray-600">As software engineers, we bring robust technical skills to data management and
+                    analysis, ensuring high-quality solutions.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <svg class="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                <h3 class="text-xl font-bold mb-4">Data Passion</h3>
+                <p class="text-gray-600">Our deep passion for data drives us to discover insights and patterns that can
+                    transform communities and drive positive change.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <svg class="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="text-xl font-bold mb-4">Dedicated Impact</h3>
+                <p class="text-gray-600">We're committed to creating lasting social impact through innovative technology
+                    solutions and data-driven insights.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{end}}

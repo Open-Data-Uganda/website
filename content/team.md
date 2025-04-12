@@ -1,9 +1,9 @@
 ---
-title: "Our Team"
-description: "Meet the dedicated team behind Open Data Uganda"
+title: 'Our Team'
+description: 'Meet the dedicated team behind Open Data Uganda'
 date: 2025-04-11
 draft: false
-layout: "team"
+layout: 'team'
 ---
 
 # Our Team

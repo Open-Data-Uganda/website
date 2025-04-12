@@ -1,10 +1,10 @@
 ---
-title: "Oil and Gas Sector Developments"
+title: 'Oil and Gas Sector Developments'
 date: 2025-02-01
-author: "Energy Team"
+author: 'Energy Team'
 featured: true
-featured_image: "/images/img.jpeg"
-tags: ["oil-and-gas", "featured"]
+featured_image: '/images/img.jpeg'
+tags: ['oil-and-gas', 'featured']
 summary: "Updates on Uganda's oil and gas sector developments and their impact on the economy."
 ---
 

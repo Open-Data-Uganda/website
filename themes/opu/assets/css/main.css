@@ -18,6 +18,10 @@
   font-display: swap;
 }
 
+@theme {
+  --color-primary: #00234B;
+}
+
 @layer base {
   body {
     font-family: "Avenir LT Std", "Poppins", sans-serif;

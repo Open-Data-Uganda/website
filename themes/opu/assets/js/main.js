@@ -72,30 +72,18 @@ window.addEventListener('scroll', function () {
   const mobileMenuIcon = document.querySelector('.fa-bars')
 
   if (window.scrollY > 50) {
-    navbar.classList.add('bg-[#0D1117]', 'shadow')
+    navbar.classList.add('bg-[#00234B]', 'shadow')
     navbar.classList.remove('bg-transparent')
-    navbarLogo.classList.remove('text-white')
+    navbarLogo.classList.add('text-white')
     navbarLogo.classList.add('text-gray-800')
-
-    navLinks.forEach(link => {
-      link.classList.remove('text-white')
-      link.classList.add('text-gray-800')
-    })
 
     if (mobileMenuIcon) {
       mobileMenuIcon.classList.remove('text-white')
       mobileMenuIcon.classList.add('text-black')
     }
   } else {
-    navbar.classList.remove('bg-[#0D1117]', 'shadow')
+    navbar.classList.remove('bg-[#00234B]', 'shadow')
     navbar.classList.add('bg-transparent')
-    navbarLogo.classList.add('text-white')
-    navbarLogo.classList.remove('text-gray-800')
-
-    navLinks.forEach(link => {
-      link.classList.add('text-white')
-      link.classList.remove('text-gray-800')
-    })
 
     if (mobileMenuIcon) {
       mobileMenuIcon.classList.remove('text-black')
@@ -110,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.scrollY > 50) {
     const navbar = document.getElementById('navbar')
     navbar.classList.add(
-      'bg-blue-900',
+      'bg-primary',
       'shadow-md',
       'py-2',
       'border-b',
@@ -123,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     if (mobileMenuIcon) {
-      mobileMenuIcon.classList.add('text-black')
+      mobileMenuIcon.classList.add('text-white')
       mobileMenuIcon.classList.remove('text-white')
     }
   } else {

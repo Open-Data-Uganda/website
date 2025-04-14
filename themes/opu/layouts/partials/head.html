@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Open Data Uganda" />
+    <meta property="og:description" content="Empowering Uganda through open data access and transparency" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.jpg" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Open Data Uganda" />
+    <meta name="twitter:description" content="Empowering Uganda through open data access and transparency" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.jpg" />
+
+    {{ $css := resources.Get "css/style.css" }}
+    <link rel="preload" href="{{ $css.RelPermalink }}" as="style" />
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    <title>Open Data Uganda</title>
+    <link rel="preload" href="../../assets/fonts/Avenir LT Std 35 Light.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="../../assets/fonts/Avenir LT Std 65 Medium.otf" as="font" type="font/otf" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Theme JavaScript -->
+    {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+</head>

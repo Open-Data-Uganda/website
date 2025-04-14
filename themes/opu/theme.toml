@@ -1,0 +1,10 @@
+name = 'opu'
+license = 'MIT'
+licenselink = 'https://github.com/Open-Data-Uganda/repo/LICENSE'
+description = 'Theme description'
+
+ homepage = 'https://github.com/owner/repo'
+
+ [author]
+  name = 'Luigi Morel'
+  homepage = 'https://luigimorel.com'

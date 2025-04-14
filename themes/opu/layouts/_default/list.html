@@ -1,0 +1,55 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<div class="relative lg:h-[60vh] h-screen pt-16">
+  <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+  <div id="hero-background" class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('{{ .Params.hero_image | default "/images/default-hero.jpg" }}')">
+  </div>
+
+  <div id="dots-container" class="absolute inset-0 z-20"></div>
+
+  <div
+    class="relative z-30 container mx-auto px-4 h-full flex flex-col justify-center items-start text-left text-white">
+    <p class="text-sm uppercase tracking-widest mb-20 flex items-center">
+      Insights <span class="ml-2 inline-block w-12 h-px bg-white"></span>
+    </p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
+      What's happening
+    </h1>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<section class="lg:py-20 py-10 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ $paginator := .Paginate (where .Pages "Type" "blog") 9 }}
+      {{ range $paginator.Pages }}
+      {{ partial "blog-card.html" . }}
+      {{ end }}
+    </div>
+
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="flex justify-center items-center space-x-2 mt-12">
+      <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ else }}#{{ end }}"
+        class="px-4 py-2 text-sm border rounded {{ if not $paginator.HasPrev }}opacity-50 cursor-not-allowed{{ else }}hover:bg-gray-50{{ end }}">
+        Previous
+      </a>
+
+      {{ range $paginator.Pagers }}
+      <a href="{{ .URL }}"
+        class="px-4 py-2 text-sm border rounded {{ if eq . $paginator }} bg-gray-900 text-white {{ else }} hover:bg-gray-50 {{ end }}">
+        {{ .PageNumber }}
+      </a>
+      {{ end }}
+
+      <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ else }}#{{ end }}"
+        class="px-4 py-2 text-sm border rounded {{ if not $paginator.HasNext }}opacity-50 cursor-not-allowed{{ else }}hover:bg-gray-50{{ end }}">
+        Next
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

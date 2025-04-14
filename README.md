@@ -1,38 +1,49 @@
-# sv
+# OpenData Uganda Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the website for OpenData Uganda, built using [Hugo](https://gohugo.io/) static site generator.
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Hugo v0.145.0 or later
+- Node.js (for asset processing)
+
+## Development
+
+1. Clone the repository:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone <repository-url>
+cd web
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. Start the Hugo development server:
 
 ```bash
-npm run dev
+hugo server -D
+```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+The site will be available at `http://localhost:1313`
+
+## Project Structure
+
+```bash
+.
+├── content/        # Website content
+├── static/         # Static files
+├── themes/opu/     # Custom theme
+└── hugo.toml       # Site configuration
 ```
 
 ## Building
 
-To create a production version of your app:
+To build the site for production:
 
 ```bash
-npm run build
+hugo --minify
 ```
 
-You can preview the production build with `npm run preview`.
+The built site will be in the `public/` directory.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Theme
+
+This site uses a custom theme called "opu" located in the `themes/opu/` directory.

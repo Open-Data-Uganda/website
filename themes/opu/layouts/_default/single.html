@@ -1,0 +1,81 @@
+{{ define "main" }}
+<div class="relative lg:h-[60vh] h-screen pt-16">
+  <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+  <div id="blog-background" class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('{{ .Params.featured_image }}')">
+  </div>
+
+  <div id="dots-container" class="absolute inset-0 z-20"></div>
+
+  <div
+    class="relative z-30 container mx-auto px-4 h-full flex flex-col justify-center items-start text-left text-white">
+    <p class="text-sm uppercase tracking-widest mb-20 flex items-center">
+      {{ .Section | upper }} <span class="ml-2 inline-block w-12 h-px bg-white"></span>
+    </p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
+      {{ .Title }}
+    </h1>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto relative flex gap-8">
+      <!-- Main Content -->
+      <div class="flex-1">
+        <!-- Blog Post Body -->
+        <div class="prose prose-lg max-w-none">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <!-- Sticky Sidebar -->
+      <aside class="hidden md:block w-64 sticky top-24 self-start">
+        <!-- Tags -->
+        <div class="mb-8">
+          <h4 class="text-gray-700 font-semibold mb-3">Tags</h4>
+          <div class="flex flex-wrap gap-2">
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}"
+              class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100">
+              {{ . }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Share Icons -->
+        <div>
+          <h4 class="text-gray-700 font-semibold mb-3">Share</h4>
+          <div class="flex flex-col space-y-3">
+            <a href="https://facebook.com/sharer/sharer.php?u={{ .Permalink | absURL }}"
+              class="text-gray-600 hover:text-blue-600 transition-colors">
+              <i class="fab fa-facebook-f w-4"></i>
+              <span class="ml-2">Share on Facebook</span>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url={{ .Permalink | absURL }}&text={{ .Title }}"
+              class="text-gray-600 hover:text-blue-600 transition-colors">
+              <i class="fab fa-twitter w-4"></i>
+              <span class="ml-2">Share on Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | absURL }}&title={{ .Title }}"
+              class="text-gray-600 hover:text-blue-600 transition-colors">
+              <i class="fab fa-linkedin-in w-4"></i>
+              <span class="ml-2">Share on LinkedIn</span>
+            </a>
+            <a href="mailto:?subject={{ .Title }}&body={{ .Permalink | absURL }}"
+              class="text-gray-600 hover:text-blue-600 transition-colors">
+              <i class="far fa-envelope w-4"></i>
+              <span class="ml-2">Share via Email</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+{{partial "related.html" .}}
+{{ end }}

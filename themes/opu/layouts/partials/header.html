@@ -1,0 +1,85 @@
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300" id="navbar">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="{{ .Site.BaseURL }}" class="text-2xl font-bold text-white" id="navbar-logo">Open Data Uganda </a>
+        </div>
+        <div class="hidden md:flex space-x-6 items-center">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <div class="relative group">
+                <button class="flex items-center space-x-1 py-2 text-white nav-link"
+                    onclick="toggleDropdown('{{ .Identifier }}-dropdown')">
+                    <span>{{ .Name }}</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div id="{{ .Identifier }}-dropdown"
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden">
+                    {{ range .Children }}
+                    <a href="{{ .URL }}" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">{{ .Name }}</a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ else }}
+            <a href="{{ .URL }}" class="py-2 text-white nav-link">{{ .Name }}</a>
+            {{ end }}
+            {{ end }}
+            <a href="#" class="py-2 text-white nav-link" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </a>
+
+        </div>
+        <div class="md:hidden flex items-center space-x-4">
+            <a href="#" class="text-white" aria-label="Search">
+                <i class="fas fa-search text-xl"></i>
+            </a>
+            <button class="text-white" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+    class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+    <div class="flex justify-between items-center p-4 border-b">
+        <a href="{{ .Site.BaseURL }}" class="text-2xl font-bold">mobile<span class="text-blue-600">Forms</span></a>
+        <button onclick="toggleMobileMenu()" class="text-gray-600">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+    </div>
+    <div class="p-4">
+        <!-- Search bar for mobile menu -->
+        <div class="mb-4 relative">
+            <input type="text" placeholder="Search..."
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <div class="py-3">
+            <button onclick="toggleMobileSubmenu('mobile-{{ .Identifier }}')"
+                class="flex justify-between items-center w-full">
+                <span class="text-lg">{{ .Name }}</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div id="mobile-{{ .Identifier }}" class="hidden mt-2 pl-4">
+                {{ range .Children }}
+                <a href="{{ .URL }}" class="block py-2">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ else }}
+        <a href="{{ .URL }}" class="block py-3 text-l">{{ .Name }}</a>
+        {{ end }}
+        {{ end }}
+        <div class="mt-4">
+            <a href="#" class="block bg-blue-600 text-white px-4 py-3 rounded-md font-medium text-center">GET
+                STARTED</a>
+        </div>
+    </div>
+</div>

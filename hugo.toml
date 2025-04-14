@@ -1,0 +1,123 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Open Data Uganda'
+theme='opu'
+
+[menu]
+  [[menu.main]]
+    name = "Industries"
+    url = ""
+    weight = 1
+    identifier = "industries"
+    
+    [[menu.main]]
+      name = "Agriculture"
+      url = "/tags/agriculture"
+      parent = "industries"
+      weight = 1
+    [[menu.main]]
+      name = "ICT"
+      url = "/tags/ict"
+      parent = "industries"
+      weight = 2
+    [[menu.main]]
+      name = "Tourism"
+      url = "/tags/tourism"
+      parent = "industries"
+      weight = 3
+    [[menu.main]]
+      name = "Manufacturing"
+      url = "/tags/manufacturing"
+      parent = "industries"
+      weight = 4
+    [[menu.main]]
+      name = "Oil and Gas"
+      url = "/tags/oil-and-gas"
+      parent = "industries"
+      weight = 5
+    [[menu.main]]
+      name = "Construction"
+      url = "/tags/construction"
+      parent = "industries"
+      weight = 6
+    [[menu.main]]
+      name = "Fishing Industry"
+      url = "/tags/fishing-industry"
+      parent = "industries"
+      weight = 7
+    [[menu.main]]
+      name = "Healthcare"
+      url = "/tags/healthcare"
+      parent = "industries"
+      weight = 8
+
+  [[menu.main]]
+    name = "About Us"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "Team"
+    url = "/team"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 4
+
+  [[menu.product]]
+    name = "Data Portal"
+    url = "/data-portal/"
+    weight = 1
+  [[menu.product]]
+    name = "API Access"
+    url = "/api/"
+    weight = 2
+  [[menu.product]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 3
+
+  [[menu.solutions]]
+    name = "Government"
+    url = "/solutions/government/"
+    weight = 1
+  [[menu.solutions]]
+    name = "Healthcare"
+    url = "/solutions/healthcare/"
+    weight = 2
+  [[menu.solutions]]
+    name = "Education"
+    url = "/solutions/education/"
+    weight = 3
+  [[menu.solutions]]
+    name = "Agriculture"
+    url = "/solutions/agriculture/"
+    weight = 4
+
+  [[menu.resources]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.resources]]
+    name = "Case Studies"
+    url = "/case-studies/"
+    weight = 2
+  [[menu.resources]]
+    name = "Data Reports"
+    url = "/reports/"
+    weight = 3
+
+[params]
+  paginate = 9
+
+[permalinks]
+  blog = "/blog/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[params.social]
+  twitter = "https://twitter.com/opendatauganda"
+  linkedin = "https://linkedin.com/company/opendatauganda"
+  github = "https://github.com/opendatauganda"
+  instagram = "https://instagram.com/opendatauganda"

@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="relative lg:h-[60vh] h-screen pt-16">
+    <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+    <div id="hero-background" class="absolute inset-0 bg-cover bg-center"></div>
+
+    <div id="dots-container" class="absolute inset-0 z-20"></div>
+
+    <div
+        class="relative z-30 container mx-auto px-4 h-full flex flex-col justify-center items-start text-left text-white">
+        <p class="text-sm uppercase tracking-widest mb-20 flex items-center">
+            {{ .Title | upper }} <span class="ml-2 inline-block w-12 h-px bg-white"></span>
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
+            Making things happen at <br class="hidden lg:inline-block"> Open Data Uganda
+        </h1>
+    </div>
+</div>
+
+
+<div class="container mx-auto px-4 lg:py-20 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ $paginator := .Paginate .Data.Pages }}
+        {{ range $paginator.Pages }}
+        {{ partial "blog-card.html" . }}
+        {{ end }}
+    </div>
+
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

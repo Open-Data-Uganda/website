@@ -1,0 +1,133 @@
+<!-- Footer -->
+<footer class="bg-primary text-white lg:py-32 py-10">
+    <div class="container mx-auto px-4">
+        <!-- Footer Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+            <!-- Logo Column -->
+            <div class="lg:col-span-1">
+                <a href="{{ .Site.BaseURL }}" class="inline-block text-2xl mb-6">
+                    Open Data Uganda
+                </a>
+                <!-- Social media icons -->
+                <div class="flex space-x-4">
+                    {{ with .Site.Params.social }}
+                    {{ with .linkedin }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                            class="fab fa-linkedin text-xl"></i></a>{{ end }}
+                    {{ with .twitter }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                            class="fab fa-twitter text-xl"></i></a>{{ end }}
+                    {{ with .instagram }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                            class="fab fa-instagram text-xl"></i></a>{{ end }}
+                    {{ with .github }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                            class="fab fa-github text-xl"></i></a>{{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Company Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-2.5">
+                    {{ with .Site.GetPage "about" }}
+                    <li><a href="{{ .RelPermalink }}" class="hover:text-gray-100 text-sm transition">About</a></li>
+                    {{ end }}
+                    {{ with .Site.GetPage "blog" }}
+                    <li><a href="{{ .RelPermalink }}" class="hover:text-gray-100 text-sm transition">Blog</a></li>
+                    {{ end }}
+                    {{ with .Site.GetPage "terms" }}
+                    <li><a href="{{ .RelPermalink }}" class="hover:text-gray-100 text-sm transition">Terms of Use</a>
+                    </li>
+                    {{ end }}
+                    {{ with .Site.GetPage "privacy" }}
+                    <li><a href="{{ .RelPermalink }}" class="hover:text-gray-100 text-sm transition">Privacy</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Product Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Product</h3>
+                <ul class="space-y-2.5">
+                    {{ range .Site.Menus.product }}
+                    <li><a href="{{ .URL }}" class="hover:text-gray-100 text-sm transition">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Solutions Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Solutions</h3>
+                <ul class="space-y-2.5">
+                    {{ range .Site.Menus.solutions }}
+                    <li><a href="{{ .URL }}" class="hover:text-gray-100 text-sm transition">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                <ul class="space-y-2.5">
+                    {{ range .Site.Menus.resources }}
+                    <li><a href="{{ .URL }}" class="hover:text-gray-100 text-sm transition">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="pt-8 border-t border-white flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-sm text-gray-100">
+                    © {{ now.Format "2006" }} {{ .Site.Title }}. All Rights Reserved.
+                </p>
+            </div>
+            <div class="flex space-x-6">
+                {{ with .Site.Params.social }}
+                {{ with .linkedin }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                        class="fab fa-linkedin text-xl"></i></a>{{ end }}
+                {{ with .twitter }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                        class="fab fa-twitter text-xl"></i></a>{{ end }}
+                {{ with .instagram }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                        class="fab fa-instagram text-xl"></i></a>{{ end }}
+                {{ with .github }}<a href="{{ . }}" class="text-gray-100 hover:text-white transition"><i
+                        class="fab fa-github text-xl"></i></a>{{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/main.js"></script>
+
+<style>
+    @keyframes pulse {
+        0% {
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+    }
+
+    /* Add hero background image */
+    #hero-background {
+        background-image: url("https://images.unsplash.com/photo-1535068484622-7a077e5aa558?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80");
+    }
+
+    /* Blog image hover animation */
+    .blog-image {
+        transition: transform 0.5s ease;
+    }
+
+    .blog-image:hover {
+        transform: scale(1.1);
+    }
+</style>

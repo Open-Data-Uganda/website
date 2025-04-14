@@ -3,7 +3,7 @@ title: 'Digital Transformation in Uganda'
 date: 2025-03-15
 author: 'Tech Team'
 featured: true
-featured_image: '/images/img.jpeg'
+featured_image: 'imagesimg.jpeg'
 tags: ['ict', 'featured']
 summary: 'Examining the rapid digital transformation and ICT sector growth in Uganda, highlighting key developments and future prospects.'
 ---
@@ -18,7 +18,7 @@ title: "Digital Transformation in Uganda's Public Sector"
 date: 2024-12-15
 author: "Tech Policy Team"
 featured: false
-featured_image: "/images/digital.jpeg"
+featured_image: "imagesdigital.jpeg"
 tags: ["digital-governance"]
 summary: "Exploring the journey of digital transformation in Uganda's public institutions and its impact on service delivery."
 

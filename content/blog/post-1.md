@@ -4,7 +4,7 @@ date: 2023-06-15
 author: 'Luigi Morel'
 description: 'this is a description '
 featured: true
-featured_image: '/images/img.jpeg'
+featured_image: 'imagesimg.jpeg'
 tags: ['featured']
 summary: 'Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt'
 ---

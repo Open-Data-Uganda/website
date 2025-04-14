@@ -4,7 +4,7 @@ summary: 'How open data is revolutionizing public service delivery and citizen e
 date: 2025-04-11
 draft: false
 featured: true
-featured_image: '/images/img.jpeg'
+featured_image: 'imagesimg.jpeg'
 tags: ['featured', 'digital-transformation', 'government']
 author: 'Sarah Nakato'
 ---

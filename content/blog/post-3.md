@@ -3,7 +3,7 @@ title: 'Your Post Title'
 date: 2023-06-15
 author: 'Author Name'
 featured: true
-featured_image: '/images/img.jpeg'
+featured_image: 'imagesimg.jpeg'
 tags: ['featured']
 summary: 'Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.'
 ---

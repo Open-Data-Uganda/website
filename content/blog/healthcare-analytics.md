@@ -3,7 +3,7 @@ title: 'Healthcare Analytics Impact'
 date: 2024-10-05
 author: 'Health Data Team'
 featured: false
-featured_image: '/images/health.jpeg'
+featured_image: 'imageshealth.jpeg'
 tags: ['healthcare']
 summary: 'Leveraging data analytics to improve healthcare outcomes and service delivery in Uganda.'
 ---

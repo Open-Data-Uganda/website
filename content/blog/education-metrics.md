@@ -3,7 +3,7 @@ title: 'Education Metrics and Outcomes'
 date: 2024-09-10
 author: 'Education Research Team'
 featured: false
-featured_image: '/images/education.jpeg'
+featured_image: 'imageseducation.jpeg'
 tags: ['education']
 summary: 'Analyzing education data to improve learning outcomes and access to quality education in Uganda.'
 ---

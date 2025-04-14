@@ -3,7 +3,7 @@ title: 'Climate Data for Sustainable Development'
 date: 2024-08-15
 author: 'Environmental Team'
 featured: false
-featured_image: '/images/climate.jpeg'
+featured_image: 'imagesclimate.jpeg'
 tags: ['environment']
 summary: 'Using climate data to drive sustainable development and environmental protection initiatives in Uganda.'
 ---

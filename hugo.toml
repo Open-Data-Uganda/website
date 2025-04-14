@@ -63,6 +63,10 @@ theme='opu'
     name = "Blog"
     url = "/blog"
     weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
 
   [[menu.product]]
     name = "Data Portal"
